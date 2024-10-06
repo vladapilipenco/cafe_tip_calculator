@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Cafe Tip Calculator</title>
+  </head>
+  <body>
+    <main>
+      <section class="leftSideSection">
+        <label for="amount">Bill amount: </label>
+        <input type="number" id="amount" name="amount" placeholder="0" />
+        <p>Select Tip</p>
+        <div class="tipButtons">
+          <button type="button" class="tipButton" data-value="0">0%</button>
+          <button type="button" class="tipButton" data-value="5">5%</button>
+          <button type="button" class="tipButton" data-value="10">10%</button>
+          <button type="button" class="tipButton" data-value="15">15%</button>
+          <button type="button" class="tipButton" data-value="25">25%</button>
+          <button type="button" class="tipButton" data-value="30">30%</button>
+        </div>
+        <label for="peopleNumber">Number of People: </label>
+        <input
+          type="number"
+          id="peopleNumber"
+          name="peopleNumber"
+          placeholder="0"
+        />
+      </section>
+      <section class="rightSideSection">
+        <div class="contentContainer">
+          <div class="leftSideContent">
+            <p>Tip Amount<span>/ person</span></p>
+            <p>Total <span>/ person</span></p>
+          </div>
+          <div class="rightSideContent">
+            <p class="total" id="tipPerPerson">0.00</p>
+            <p class="total" id="totalPerPerson">0.00</p>
+          </div>
+        </div>
+        <div class="actionButtonContainer">
+          <button type="button" class="actionButton" id="calculate">
+            CALCULATE
+          </button>
+          <button type="button" class="actionButton" id="reset">RESET</button>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
